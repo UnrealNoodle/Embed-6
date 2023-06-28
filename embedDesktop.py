@@ -12,7 +12,7 @@ def get_inf(webhook):
         "avatar_url": "https://cdn.discordapp.com/attachments/1120798395389444169/1122895649201983519/image-250x250.jpg",
         "embeds": [
             {
-                "color": 5639644,
+                "color": 16753920,
                 "title": "Desktop Screenshot",
                 "image": {
                     "url": "attachment://image.png"
